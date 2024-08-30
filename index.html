@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript array sort</h1>
+    <p>click the button to sort the array in ascending order</p>
+    <button onclick="ascending()">ascending order</button>
+    <button onclick="descending()">descending order</button>
+    <p id="result"></p>
+    <script>
+        var points=[40, 90, 33, 25, 69];
+document.getElementById("result").innerHTML=points;
+function ascending(){
+    points.sort(function(a, b){return a-b});
+    document.getElementById("results").innerHTML=points;
+}
+function descending(){
+    points.sort(function(a, b){return b-a});
+    document.getElementById("results").innerHTML=points;
+}
+    </script>
+</body>
+</html>
